@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bungee&family=Creepster&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Anton&family=Bungee&family=Creepster&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Amarante&family=Anton&family=Bungee&family=Creepster&family=Lobster&display=swap');
 
 @import "tailwindcss";
 
@@ -6,6 +8,33 @@
     -webkit-box-reflect: below -200px linear-gradient(transparent, rgba(0,0,0,0.2));
 }
 
-.heroimg > h1 {
+.heroimg > h1, .headphoneName {
      font-family: "Bungee", sans-serif;
+}
+
+.brandanddesc {
+    font-family: "Aladin";
+}
+.brandanddesc > p {
+    font-family: "Amarante";
+}
+
+.navlinks > ul > li {
+    font-family: "Aladin";
+}
+
+.homepage {
+    background: 
+    radial-gradient(circle at top left, rgba(255, 45, 85, 0.35), transparent 40%),
+    radial-gradient(circle at top right, rgba(220, 38, 38, 0.30), transparent 40%),
+    radial-gradient(circle at bottom left, rgba(127, 29, 29, 0.25), transparent 40%),
+    radial-gradient(circle at bottom right, rgba(185, 28, 28, 0.30), transparent 40%),
+    linear-gradient(
+      135deg,
+      #050505 0%,
+      #7F1D1D 25%,
+      #DC2626 50%,
+      #7F1D1D 75%,
+      #050505 100%
+    )
 }

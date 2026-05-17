@@ -108,16 +108,16 @@ const App = () => {
     img: hdp10,
   },
 ];
-  // useEffect(() => {
+  useEffect(() => {
     
-  //  const timerId = setTimeout(() => {
-  //     setcurrentIdx(prev => prev = (prev+1) % headphoneData.length)
-  //   }, 2000);
+   const timerId = setTimeout(() => {
+      setcurrentIdx(prev => prev = (prev+1) % headphoneData.length)
+    }, 3000);
   
-  //   return () => {
-  //     clearTimeout(timerId)
-  //   }
-  // }, [currentIdx])
+    return () => {
+      clearTimeout(timerId)
+    }
+  }, [currentIdx])
   
 
 
@@ -126,12 +126,23 @@ const App = () => {
   
   return (
     <div>
+      <motion.div className="homepage absolute -z-100"
+        animate={{
+
+      }}
+  transition={{
+    duration: 2,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+      >
       <div>
         <Navbar />
       </div>
       <div>
         <Hero data={headphoneData} CI = {currentIdx}/>
       </div>
+      </motion.div>
      
     </div>
   )
