@@ -4,6 +4,11 @@
 
 @import "tailwindcss";
 
+/* .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+} */
 .heroimg > img{
     -webkit-box-reflect: below -200px linear-gradient(transparent, rgba(0,0,0,0.2));
 }
@@ -24,6 +29,9 @@
 }
 
 .homepage {
+   position: sticky;
+   top: -400px;
+
     background: 
     radial-gradient(circle at top left, rgba(255, 45, 85, 0.35), transparent 40%),
     radial-gradient(circle at top right, rgba(220, 38, 38, 0.30), transparent 40%),
@@ -36,5 +44,64 @@
       #DC2626 50%,
       #7F1D1D 75%,
       #050505 100%
-    )
+    );
+    
 }
+
+.hcpCardsDes::-webkit-scrollbar {
+display: none;
+}
+
+.hcpCards {
+   transition: all ease 0.3s;
+   &:hover {
+    transform: translateY(-100px);
+   }
+}
+
+/* .hcpCards:hover > .hcpCardsDes{
+    height: 100px;
+    transition: all ease 0.3s;
+    bottom: 100px
+    
+} */
+
+.hcpheading {
+    font-family: "Aladin";
+}
+
+.hcpCardsDes {
+    font-family: "Amarante";
+}
+
+.hcp {
+    position: sticky;
+    top: 480px;
+}
+
+
+.newreleases {
+    position: relative;
+    z-index: 10;
+}
+
+.newreleasestop > h1 {
+    font-family: "Aladin";
+}
+
+.newreleasestop > h2 {
+    font-family: "Bungee", sans-serif;
+}
+.newreleasestop > p {
+    color: rgba(255, 255, 255, 0.623);
+    font-family: "Amarante";
+    font-size: 30px;
+    width: 50%;
+    text-align: center;
+}
+
+.newrcards {
+    box-shadow: 0px 0px 10px 1px rgb(100, 57, 61);
+}
+
+

@@ -12,6 +12,8 @@ import {motion} from "motion/react"
 import { useEffect, useState } from "react"
 import Navbar from "./components/navbar/Navbar.jsx"
 import Hero from "./components/hero/Hero.jsx"
+import HomePageCards from "./components/HomePageCards.jsx"
+import NewReleases from "./components/NewReleases.jsx"
 
 
 const App = () => {
@@ -126,24 +128,22 @@ const App = () => {
   
   return (
     <div>
-      <motion.div className="homepage absolute -z-100"
-        animate={{
-
-      }}
-  transition={{
-    duration: 2,
-    repeat: Infinity,
-    ease: "easeInOut",
-  }}
-      >
-      <div>
+      <div className="homepage">
+      <div className="navbar">
         <Navbar />
       </div>
       <div>
         <Hero data={headphoneData} CI = {currentIdx}/>
       </div>
-      </motion.div>
-     
+      </div>
+      <div className="hcp ">
+        <HomePageCards />
+      </div>
+
+      <div className="min-h-screen bg-[#000000] newreleases">
+        <NewReleases />
+      </div>
+
     </div>
   )
 }
